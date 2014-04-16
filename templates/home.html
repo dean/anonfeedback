@@ -1,0 +1,22 @@
+<!doctype html>
+<title>Anonymous Feedback for 'Organization'</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<div class="page">
+  <h1>Anonymous Feedback for 'Organization'</h1>
+  <div align="right"><a href="/feedback">Want to give feedback? Click Here!</a></div></br>
+  <h2>Posts:</h2></br>
+  
+  {% for post in posts %}
+    <div class="flash">
+    <h3 style="font-weight:normal">
+        {{ post.subject }}</br>
+    </div>
+    <div class="flash">
+        {{ post.content }}</br>
+    </div>
+    </h3>
+    <em><h4>{{ post.time_posted }}</h4></em>
+    </br>
+  {% endfor %}
+  <hr>
+</div>

@@ -1,0 +1,10 @@
+<title>Give Feedback</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+<form action="{{ url_for('give_feedback') }}" method="POST" class=search-form>
+    <h2>Give your feedback:</h2></br>
+    Subject: <input type=text name=subject></br>
+    Content: <textarea name=content wrap=hard></textarea></br></br>
+    <input type="submit">
+</form>
+</div>
